@@ -47,28 +47,23 @@ table {
 body, html {
 	height: 2253px;
 }
-img {
-	position: absolute;
-	top: 140px;
-}
-.chopOff {
-	height: 1050px;
-	top: -245px;
-	position: relative;
-	overflow: hidden;
-}
 .topBox {
 	width: auto;
 	margin-top: 40px;
-	height: 867px;
-	background-size: 60%;
+	position: relative;
+	height: 1167px;
+	background-image: url(banner.png);
+	background-size: 80%;
+	background-position:  left 200px;
 	background-repeat: no-repeat;
 	margin: 0 0 -90px 0;
 }
 .gradient {
 	height: 271px;
-	position: relative;
-	top: 75px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(27,27,27,1) 87%, rgba(30,30,30,1) 98%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(87%,rgba(27,27,27,1)), color-stop(98%,rgba(30,30,30,1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(27,27,27,1) 87%,rgba(30,30,30,1) 98%); /* Chrome10+,Safari5.1+ */
@@ -76,9 +71,7 @@ img {
 	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(27,27,27,1) 87%,rgba(30,30,30,1) 98%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(27,27,27,1) 87%,rgba(30,30,30,1) 98%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1e1e1e',GradientType=0 ); /* IE6-9 */
-
 }
-
 .penisHead {
 	color: #4D4D4D;
 	font-family: 'Open Sans';
@@ -91,32 +84,26 @@ img {
 	display: inline-block;
 	text-align: right;
 	top: -5px;
-	
 }
-
 span {
 	position: relative;
 	left: -83px;
 	color: #737373;
 }
-
-h3 {
+.perform {
 	position: relative;
-	top: 190px;
-	right: 220px;
+	top: 230px;
 	text-align: right;
 	font-size: 48px;
 	font-family: "Open Sans";
 	font-style: italic;
 	color: #A3A3A3;
 }
-
 .container {
 	width: 1100px;
 	height: 300px;
 	margin: 0 auto;
 }
-
 .midBox {
 	position: relative;
 	top: 60px;
@@ -124,15 +111,9 @@ h3 {
 	background-color: black;
 	box-shadow: 1px -15px 20px;
 }
-
 .bottomBox {
 	height: 500px;
 	background-color: white;
-}
-
-footer {
-	height: 130px;
-	background-color: #333;
 }
 .containerBB {
 	width: 1100px;
@@ -163,23 +144,27 @@ input {
 	margin-left: 36px;
 }
 .email {
-	border: 2px #333 solid;
+	border: 1px #333 solid;
+	border-radius: 3px;
 	margin: 10px;
 	margin-top: 38px;
 	margin-left: 36px;
 }
 .creditcard {
-	border: 2px #333 solid;
+	border: 1px #333 solid;
+	border-radius: 3px;	
 }
 .monthyear {
-	border: 2px #333 solid;
-	width: 77px;
+	border: 1px #333 solid;
+	border-radius: 3px;	
+	width: 78px;
 	position: relative;
-	top: -2px;
+	top: -1px;
 }
 .code {
-	border: 2px #333 solid;
-	width: 77px;
+	border: 1px #333 solid;
+	border-radius: 3px;
+	width: 78px;
 	height: 17px;
 	position: absolute;
 	top: 22px;
@@ -192,9 +177,20 @@ input {
 	margin: 8px 0 0 10px;
 	position: absolute;
 }
+.checkerBorder {
+	position: relative;
+	top: 65px;
+	height: 30px;
+	width: 185px;
+	margin-left: 36px;
+	border: 1px solid #333;
+	border-radius: 2px;
+}
 .push {
-	background-color: limegreen;
-	border: 2px solid green;
+	background-color: #31A0E5;
+	box-shadow: inset 0px 0px 9px 0px #31A9E2;
+	border: .5px solid #31A0E5;
+	border-radius: 2px;
 	position: relative;
 	top: 100px;
 	width: 200px;
@@ -203,33 +199,20 @@ input {
 	font-family: 'Helvetica Neue';
 	font-weight: bold;
 	font-size: 15px;
-	color: #333;
-
+	color: white;
 }
-
-.checkerBorder {
-	position: relative;
-	top: 65px;
-	height: 30px;
-	width: 185px;
-	margin-left: 36px;
-	border: 1px solid #333;
-}
-
 .penis {
 	width: 130px;
 	position: relative;
 	top: 7px;
 	left: 35px;
 }
-
 .creditInfo {
 	width: 180px;
 	height: 108px;
 	display: inline;
 	position: relative;
 	top: 25px;
-
 }
 .tickets {
 	width: 450px;
@@ -254,8 +237,8 @@ input {
 	font-family: "Open sans";
 	font-weight: 300;
 	font-size: 24px;
+	line-height: 33px;
 }
-
 .textBox {
 	height: 750px;
 	background-color: black;
@@ -273,16 +256,11 @@ input {
 	margin: 0 auto;
 	text-align: center;
 }
-.firstPair, .secondPair, .thirdPair {
+.comment {
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 120px;
-}
-
-
-.firstComment, .secondComment, .thirdComment {
-	position: relative;
 	font-family: "Cardo";
 	font-style: italic;
 	font-weight: 400;
@@ -290,8 +268,7 @@ input {
 	opacity: .6;
 	color: white;
 }
-
-.commenter {
+.comment p {
 	position: relative;
 	color: white;
 	font-family: "Cardo";
@@ -301,18 +278,18 @@ input {
 	margin-top: 20px;
 }
 footer {
+	height: 130px;
 	background-color: #D8D8D8;
 	border-top: 1px solid dimgray;
 }
 .footContainer {
-	width: 1100px;
+	width: 870px;
 	height: 60px;
 	position: relative;
 	margin: 0 auto;
 	margin-top: 53.5px;
 	display: block;
 }
-
 a {
 	text-decoration: none;
 	color: #4D4D4D;
@@ -320,30 +297,22 @@ a {
 a:hover {
 	color: black;
 }
-.homeCharityTickets {
-	text-align: left;
-	position: relative;
-	left: 110px;
-}
 li {
+	position: relative;
 	display: inline-block;
 	width: 100px;
 	text-align: center;
 	border-right: 1px solid #979797;
-}
-.footPiece {
 	font-family: "Open Sans";
 	font-weight: 300;
 	font-size: 24px;
 }
-
 .leftBorder {
 	border-left: 1px solid white;
 }
 .noRight {
 	border-right: none;
 }
-
 .copyright {
 	height: 33px;
 	width: 200px;
